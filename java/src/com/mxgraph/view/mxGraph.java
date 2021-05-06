@@ -4306,10 +4306,10 @@ public class mxGraph extends mxEventSource
 
 				if (this.getModel().isVertex(vertex.cell))
 				{
-					boolean flipH = mxUtils.getString(vertex.getStyle(),
-							mxConstants.STYLE_FLIPH).equals(1);
-					boolean flipV = mxUtils.getString(vertex.getStyle(),
-							mxConstants.STYLE_FLIPV).equals(1);
+					boolean flipH = "1".equals(mxUtils.getString(vertex.getStyle(),
+							mxConstants.STYLE_FLIPH));
+					boolean flipV = "1".equals(mxUtils.getString(vertex.getStyle(),
+							mxConstants.STYLE_FLIPV));
 
 					if (flipH)
 					{
